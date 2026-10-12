@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "cloudy",
+  "version": "${version}",
+  "name": "Cloudy",
+  "description": "Cloudy v1 - a Meteor Client addon. Made by Mostly Cloudy.",
+  "authors": [
+    "Mostly Cloudy"
+  ],
+  "icon": "assets/cloudy/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.mostlycloudy.cloudy.Cloudy"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "79,168,232",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
