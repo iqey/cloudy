@@ -22,7 +22,7 @@ public class Cloudy extends MeteorAddon {
     public static final String VERSION = "v1";
     public static final String AUTHOR = "Mostly Cloudy";
 
-    public static final Category CATEGORY = new Category(NAME, () -> DisplayItemUtils.toStack(Items.WHITE_WOOL));
+    public static final Category CATEGORY = new Category(NAME, () -> DisplayItemUtils.toStack(Items.PHANTOM_MEMBRANE));
     public static final HudGroup HUD_GROUP = new HudGroup(NAME);
 
     @Override
