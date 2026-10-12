@@ -39,7 +39,7 @@ public final class Notify {
                 .text(message)
                 .sound(sound ? SimpleSoundInstance.forUI(SoundEvents.NOTE_BLOCK_CHIME.value(), 1.2f, 1f) : null)
                 .build();
-            mc.gui.toastManager().addToast(toast);
+                   mc.getToastManager().addToast(toast);
         } else if (sound) {
             // Chat-only mode still gets a sound if asked for.
             mc.getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.NOTE_BLOCK_CHIME.value(), 1.2f, 1f));
